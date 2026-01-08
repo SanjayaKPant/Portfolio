@@ -3,58 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Sanjaya K. Pant | PhD Researcher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* --- ACADEMIC THEME SETTINGS --- */
+        :root {
+            --primary-color: #1a365d; /* Navy Blue */
+            --accent-color: #2b6cb0;  /* Bright Blue */
+            --bg-color: #f7fafc;      /* Light Grey */
+            --text-color: #2d3748;    /* Dark Grey */
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            height: 100vh;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #333;
-        }
-        .card {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-        }
-        h1 {
-            color: #2d3748;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #718096;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             line-height: 1.6;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--accent-color); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background-color: white;
+            padding: 4rem 5%;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        /* PHOTO STYLING */
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%; /* Circle shape */
+            object-fit: cover;
+            border: 4px solid var(--accent-color);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        .hero .subtitle {
+            font-size: 1.25rem;
+            color: #4a5568;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .hero .badge {
+            background-color: #ebf8ff;
+            color: #2b6cb0;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 2rem;
         }
         .btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #667eea;
+            background-color: var(--primary-color);
             color: white;
-            text-decoration: none;
+            padding: 12px 30px;
             border-radius: 5px;
+            text-decoration: none;
             font-weight: bold;
             transition: background 0.3s;
         }
-        .btn:hover {
-            background-color: #5a67d8;
+        .btn:hover { background-color: var(--accent-color); }
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            margin-left: 10px;
         }
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* --- CONTAINER --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 20px;
+        }
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        /* --- RESEARCH GRID --- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            border-top: 4px solid var(--primary-color);
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: var(--primary-color); margin-top: 0; }
+        .card i { color: var(--accent-color); font-size: 2rem; margin-bottom: 15px; display: block; }
+
+        /* --- PUBLICATIONS BOX --- */
+        .scholar-box {
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 3rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 4rem;
+        }
+        footer a { color: #bee3f8; margin: 0 10px; text-decoration: none; }
+        footer a:hover { color: white; }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>Hello, I'm Sanjaya!</h1>
-        <p>Welcome to my personal portfolio. I am building this site using PyCharm and hosting it on Vercel.</p>
-        <a href="#" class="btn">Contact Me</a>
+    <nav>
+        <div class="nav-brand">Sanjaya K. Pant</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <img src="Sanjaya-Pant.webp" alt="Sanjaya Kumar Pant" class="profile-img">
+
+        <h1>Sanjaya Kumar Pant</h1>
+        <div class="subtitle">Ph.D. Researcher | AI in Science Education</div>
+        <div class="badge">GKS Scholar &bull; South Korea</div>
+        <br>
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="https://scholar.google.com/citations?user=ClcpiroAAAAJ&hl=en&authuser=3" target="_blank" class="btn btn-outline">
+            <i class="fas fa-graduation-cap"></i> Google Scholar
+        </a>
     </div>
+
+    <div class="container">
+
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p style="font-size: 1.1rem;">
+                Hi, I'm <strong>Sanjaya</strong> from Nepal. I am currently pursuing my Ph.D. in South Korea under the prestigious <strong>Global Korea Scholarship (GKS)</strong> program.
+            </p>
+            <p style="font-size: 1.1rem;">
+                My academic focus lies in <strong>AI-integration in Science Education</strong>. I am passionate about understanding how modern technologies can transform learning experiences in STEM fields.
+            </p>
+        </section>
+
+        <section id="research">
+            <h2 class="section-title">Research Areas</h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-microscope"></i>
+                    <h3>AI in Science</h3>
+                    <p>Exploring artificial intelligence tools to enhance scientific inquiry and data analysis for students.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Learning Science</h3>
+                    <p>Investigating cognitive processes to design better educational technologies and curricula.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-atom"></i>
+                    <h3>STEM / STEAM</h3>
+                    <p>Integrating Science, Technology, Engineering, Arts, and Mathematics for holistic education.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" style="margin-top: 4rem;">
+            <h2 class="section-title">Publications</h2>
+            <div class="scholar-box">
+                <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">
+                    My latest research articles and citations are available on Google Scholar.
+                </p>
+                <a href="https://scholar.google.com/citations?user=ClcpiroAAAAJ&hl=en&authuser=3" target="_blank" class="btn">
+                    <i class="fas fa-external-link-alt"></i> View Google Scholar Profile
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" style="margin-top: 4rem; text-align: center;">
+            <h2 class="section-title">Get in Touch</h2>
+            <p>I am open to collaboration and academic inquiries.</p>
+
+            <div style="margin-top: 20px; font-size: 1.1rem; line-height: 2;">
+                <p>
+                    <i class="fas fa-envelope" style="color: var(--accent-color);"></i>
+                    <strong>Email:</strong> <a href="mailto:sanjaya@gnu.ac.kr" style="color: var(--primary-color);">sanjaya@gnu.ac.kr</a>
+                </p>
+                <p>
+                    <i class="fas fa-phone" style="color: var(--accent-color);"></i>
+                    <strong>Mobile:</strong> +82-013327-1984
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div>
+            <a href="https://scholar.google.com/citations?user=ClcpiroAAAAJ&hl=en&authuser=3" target="_blank"><i class="fas fa-graduation-cap fa-lg"></i> Scholar</a>
+            <a href="mailto:sanjaya@gnu.ac.kr"><i class="fas fa-envelope fa-lg"></i> Email</a>
+        </div>
+        <p style="font-size: 0.9rem; margin-top: 2rem; opacity: 0.7;">
+            &copy; 2026 Sanjaya Kumar Pant. <br>
+            Ph.D. Researcher | GKS Scholar
+        </p>
+    </footer>
 
 </body>
 </html>

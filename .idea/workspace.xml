@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2407a02e-0e27-4fee-89bd-3bf8010be6a0" name="Changes" comment="Added design">
+      <change afterPath="$PROJECT_DIR$/Sanjaya-Pant.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -56,6 +59,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/sanjaya/PycharmProjects/Portfolio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,7 +85,7 @@
       <updated>1767879105102</updated>
       <workItem from="1767879106204" duration="395000" />
       <workItem from="1767879514882" duration="29000" />
-      <workItem from="1767881402172" duration="2647000" />
+      <workItem from="1767881402172" duration="3947000" />
     </task>
     <task id="LOCAL-00001" summary="Added design">
       <option name="closed" value="true" />
@@ -99,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767885248235</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added design">
+      <option name="closed" value="true" />
+      <created>1767885901878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767885901878</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
