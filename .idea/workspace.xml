@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2407a02e-0e27-4fee-89bd-3bf8010be6a0" name="Changes" comment="Added design">
-      <change afterPath="$PROJECT_DIR$/Sanjaya-Pant.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="2407a02e-0e27-4fee-89bd-3bf8010be6a0" name="Changes" comment="Add profile photo and details" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +64,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -85,7 +86,7 @@
       <updated>1767879105102</updated>
       <workItem from="1767879106204" duration="395000" />
       <workItem from="1767879514882" duration="29000" />
-      <workItem from="1767881402172" duration="3947000" />
+      <workItem from="1767881402172" duration="4617000" />
     </task>
     <task id="LOCAL-00001" summary="Added design">
       <option name="closed" value="true" />
@@ -111,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767885901878</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add profile photo and details">
+      <option name="closed" value="true" />
+      <created>1767887345821</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1767887345821</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added design" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added design" />
+    <MESSAGE value="Add profile photo and details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add profile photo and details" />
   </component>
 </project>
